@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Notification } from 'element-react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import NavButton from './Components/NavButton';
+import LeftNav from './Components/LeftNav';
 import logo from './logo.svg';
 import './App.css';
 
@@ -15,10 +15,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <aside>
-          <NavButton default={true} />
-          <NavButton />
-        </aside>
+        <LeftNav />
         <p className="App-intro">
           <Button onClick={this.onClick.bind(this)} >
             <FontAwesomeIcon icon={['fas', 'clipboard-check']} /> 

@@ -22,6 +22,67 @@
   font-size: large;
 }
 
+.is-active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.nav-button-outer {
+  cursor: pointer;
+}
+
+.hamburger-box {
+  height: 3rem;
+  width: 100%;
+  background-color: #545c64;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-menu-vertical {
+  background-color: #383d42;
+  border-right: none;
+}
+
+.page-header {
+  box-shadow: 0 2px 5px #ccc;
+  position: relative;
+  display: flex;
+}
+
+.page-header .header {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-header .header.header-left > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.page-header .header.header-right > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.main-left-bar {
+  background: #ccc;
+  color: #fff;
+  width: 3rem;
+}
+
+.main-left-bar .left-nav-button {
+  margin: 0 auto 2rem auto;
+  display: block;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
